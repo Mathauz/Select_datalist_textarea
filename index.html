@@ -8,7 +8,42 @@
 <body>
     <h1>Formulário 5</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+    <label for="iest">Estado: </label>
+    <select name="estado" id="iest">
+    <option value="" selected>--- Escolha ---</option></option>   
+    <optgroup label="Região Sudeste">
+        <option value="MG">MG</option>
+        <option value="SP">SP</option>
+        <option value="RJ">RJ</option>
+    </optgroup>
+    <optgroup label="Região Sul">
+        <option value="PR">PR</option>
+        <option value="SC">SC</option>
+        <option value="RS">RS</option>
+    </optgroup>
+    </select>
     
+    <p>
+    <label for="iprof">Profissão: </label>
+    <input type="text" name="profissão" id="iprof" list="listaprofissão">
+    <datalist id="listaprofissão">
+    <option value="ADM">Admin</option>
+    <option value="ENG">Engen</option>
+    <option value="MAT">Matema</option>
+    </datalist>
+    </p>
+
+    <p>
+    <label for="itex">Mensagem: </label>   
+    <textarea name="texto" id="itex"></textarea>
+    </p>
+
+    </p>
+    <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    </p>
 
     </form>
 </body>
